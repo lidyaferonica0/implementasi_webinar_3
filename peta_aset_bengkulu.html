@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4b5eb08472f68bba70e7f9c9ab0c5b8e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4b5eb08472f68bba70e7f9c9ab0c5b8e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4b5eb08472f68bba70e7f9c9ab0c5b8e = L.map(
+                "map_4b5eb08472f68bba70e7f9c9ab0c5b8e",
+                {
+                    center: [-3.8, 102.28],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15c759e85987ba256c869d9fb59f5b6e = L.tileLayer(
+                "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_15c759e85987ba256c869d9fb59f5b6e.addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            var feature_group_611f4ad6e3d74c2bd585829eef1bd692 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_34604d0697803ed4b7af5e158b416e0b = L.circleMarker(
+                [-3.7865, 102.2784],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_611f4ad6e3d74c2bd585829eef1bd692);
+        
+    
+        var popup_432465476eaf419d6102a5be0009cca9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5fc5cd346c02daed8d6ad2ccdbb3e004 = $(`<div id="html_5fc5cd346c02daed8d6ad2ccdbb3e004" style="width: 100.0%; height: 100.0%;">         <b>Fasilitas Pendidikan A</b><br>         Kategori: Pendidikan<br>         Kondisi: Baik<br>         Aset terdekat: Infrastruktur Jalan B<br>         Jarak terdekat: 1.333 km         </div>`)[0];
+                popup_432465476eaf419d6102a5be0009cca9.setContent(html_5fc5cd346c02daed8d6ad2ccdbb3e004);
+            
+        
+
+        circle_marker_34604d0697803ed4b7af5e158b416e0b.bindPopup(popup_432465476eaf419d6102a5be0009cca9)
+        ;
+
+        
+    
+    
+            circle_marker_34604d0697803ed4b7af5e158b416e0b.bindTooltip(
+                `<div>
+                     Fasilitas Pendidikan A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b961869fbf62a0dd2cf0f44d48f66af8 = L.circleMarker(
+                [-3.8, 102.285],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_611f4ad6e3d74c2bd585829eef1bd692);
+        
+    
+        var popup_ead8fd2d9ad2ea5f908b20d6be3c544c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d130ec27cbdd67ac492e07a3db248360 = $(`<div id="html_d130ec27cbdd67ac492e07a3db248360" style="width: 100.0%; height: 100.0%;">         <b>Fasilitas Pendidikan B</b><br>         Kategori: Pendidikan<br>         Kondisi: Perlu pemeriksaan<br>         Aset terdekat: Infrastruktur Jalan B<br>         Jarak terdekat: 1.132 km         </div>`)[0];
+                popup_ead8fd2d9ad2ea5f908b20d6be3c544c.setContent(html_d130ec27cbdd67ac492e07a3db248360);
+            
+        
+
+        circle_marker_b961869fbf62a0dd2cf0f44d48f66af8.bindPopup(popup_ead8fd2d9ad2ea5f908b20d6be3c544c)
+        ;
+
+        
+    
+    
+            circle_marker_b961869fbf62a0dd2cf0f44d48f66af8.bindTooltip(
+                `<div>
+                     Fasilitas Pendidikan B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_611f4ad6e3d74c2bd585829eef1bd692.addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            var feature_group_fbe2b55d578aa41d6eed54afdd4d1dce = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_229a64b5d5b23f94e0a35a34e6167705 = L.circleMarker(
+                [-3.813, 102.3005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbe2b55d578aa41d6eed54afdd4d1dce);
+        
+    
+        var popup_e0ede7ee79e1cb496c6414d4b8efce6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aca2f57fa38201a540f2c6015a7f7c09 = $(`<div id="html_aca2f57fa38201a540f2c6015a7f7c09" style="width: 100.0%; height: 100.0%;">         <b>Fasilitas Kesehatan A</b><br>         Kategori: Kesehatan<br>         Kondisi: Baik<br>         Aset terdekat: Fasilitas Pendidikan B<br>         Jarak terdekat: 2.247 km         </div>`)[0];
+                popup_e0ede7ee79e1cb496c6414d4b8efce6e.setContent(html_aca2f57fa38201a540f2c6015a7f7c09);
+            
+        
+
+        circle_marker_229a64b5d5b23f94e0a35a34e6167705.bindPopup(popup_e0ede7ee79e1cb496c6414d4b8efce6e)
+        ;
+
+        
+    
+    
+            circle_marker_229a64b5d5b23f94e0a35a34e6167705.bindTooltip(
+                `<div>
+                     Fasilitas Kesehatan A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31845a635b580017d277987baa96ac52 = L.circleMarker(
+                [-3.795, 102.265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_fbe2b55d578aa41d6eed54afdd4d1dce);
+        
+    
+        var popup_59ea2b2f66c9fc2f0245d782950de13b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1158fd9425312ed6eb42e3dc634ae914 = $(`<div id="html_1158fd9425312ed6eb42e3dc634ae914" style="width: 100.0%; height: 100.0%;">         <b>Fasilitas Kesehatan B</b><br>         Kategori: Kesehatan<br>         Kondisi: Perlu pemeriksaan<br>         Aset terdekat: Infrastruktur Jalan B<br>         Jarak terdekat: 1.159 km         </div>`)[0];
+                popup_59ea2b2f66c9fc2f0245d782950de13b.setContent(html_1158fd9425312ed6eb42e3dc634ae914);
+            
+        
+
+        circle_marker_31845a635b580017d277987baa96ac52.bindPopup(popup_59ea2b2f66c9fc2f0245d782950de13b)
+        ;
+
+        
+    
+    
+            circle_marker_31845a635b580017d277987baa96ac52.bindTooltip(
+                `<div>
+                     Fasilitas Kesehatan B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_fbe2b55d578aa41d6eed54afdd4d1dce.addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            var feature_group_93299e83c29ab4d706c47f38aad7e305 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_b9eaa782f5d128e2635789f88ab641dc = L.circleMarker(
+                [-3.805, 102.27],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_93299e83c29ab4d706c47f38aad7e305);
+        
+    
+        var popup_741d73e4afbdafb9e5e6949e6aec1a16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f85d9dee08fe7886f3de5cfba3942128 = $(`<div id="html_f85d9dee08fe7886f3de5cfba3942128" style="width: 100.0%; height: 100.0%;">         <b>Taman Kota A</b><br>         Kategori: Ruang Terbuka<br>         Kondisi: Baik<br>         Aset terdekat: Infrastruktur Jalan B<br>         Jarak terdekat: 0.956 km         </div>`)[0];
+                popup_741d73e4afbdafb9e5e6949e6aec1a16.setContent(html_f85d9dee08fe7886f3de5cfba3942128);
+            
+        
+
+        circle_marker_b9eaa782f5d128e2635789f88ab641dc.bindPopup(popup_741d73e4afbdafb9e5e6949e6aec1a16)
+        ;
+
+        
+    
+    
+            circle_marker_b9eaa782f5d128e2635789f88ab641dc.bindTooltip(
+                `<div>
+                     Taman Kota A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b2d32c65ccbcef7d8b43e03179b9082 = L.circleMarker(
+                [-3.79, 102.29],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_93299e83c29ab4d706c47f38aad7e305);
+        
+    
+        var popup_0ee63265ad5689b9cc839402d7944998 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c206aad6c70d984ede4e42202037f4f = $(`<div id="html_0c206aad6c70d984ede4e42202037f4f" style="width: 100.0%; height: 100.0%;">         <b>Taman Kota B</b><br>         Kategori: Ruang Terbuka<br>         Kondisi: Baik<br>         Aset terdekat: Fasilitas Pendidikan B<br>         Jarak terdekat: 1.243 km         </div>`)[0];
+                popup_0ee63265ad5689b9cc839402d7944998.setContent(html_0c206aad6c70d984ede4e42202037f4f);
+            
+        
+
+        circle_marker_8b2d32c65ccbcef7d8b43e03179b9082.bindPopup(popup_0ee63265ad5689b9cc839402d7944998)
+        ;
+
+        
+    
+    
+            circle_marker_8b2d32c65ccbcef7d8b43e03179b9082.bindTooltip(
+                `<div>
+                     Taman Kota B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_93299e83c29ab4d706c47f38aad7e305.addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            var feature_group_a0343125a514a18e696db581691b7ec2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_98e6ad619c0abb5cff445422bb691df2 = L.circleMarker(
+                [-3.81, 102.28],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a0343125a514a18e696db581691b7ec2);
+        
+    
+        var popup_38d88705260344a821982f4a738dfb47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8cbad81030441fcb501b27f8298d38ef = $(`<div id="html_8cbad81030441fcb501b27f8298d38ef" style="width: 100.0%; height: 100.0%;">         <b>Infrastruktur Jalan A</b><br>         Kategori: Infrastruktur Jalan<br>         Kondisi: Perlu perbaikan<br>         Aset terdekat: Taman Kota A<br>         Jarak terdekat: 1.241 km         </div>`)[0];
+                popup_38d88705260344a821982f4a738dfb47.setContent(html_8cbad81030441fcb501b27f8298d38ef);
+            
+        
+
+        circle_marker_98e6ad619c0abb5cff445422bb691df2.bindPopup(popup_38d88705260344a821982f4a738dfb47)
+        ;
+
+        
+    
+    
+            circle_marker_98e6ad619c0abb5cff445422bb691df2.bindTooltip(
+                `<div>
+                     Infrastruktur Jalan A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9286c637f49c0c9226dc4cf0395a236e = L.circleMarker(
+                [-3.798, 102.275],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a0343125a514a18e696db581691b7ec2);
+        
+    
+        var popup_7a3fbf5c0fca135075b6a6719c4a8874 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_42628e0b72379baa1b98b2591fec183e = $(`<div id="html_42628e0b72379baa1b98b2591fec183e" style="width: 100.0%; height: 100.0%;">         <b>Infrastruktur Jalan B</b><br>         Kategori: Infrastruktur Jalan<br>         Kondisi: Baik<br>         Aset terdekat: Taman Kota A<br>         Jarak terdekat: 0.956 km         </div>`)[0];
+                popup_7a3fbf5c0fca135075b6a6719c4a8874.setContent(html_42628e0b72379baa1b98b2591fec183e);
+            
+        
+
+        circle_marker_9286c637f49c0c9226dc4cf0395a236e.bindPopup(popup_7a3fbf5c0fca135075b6a6719c4a8874)
+        ;
+
+        
+    
+    
+            circle_marker_9286c637f49c0c9226dc4cf0395a236e.bindTooltip(
+                `<div>
+                     Infrastruktur Jalan B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_a0343125a514a18e696db581691b7ec2.addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+        
+    
+            var layer_control_985ad0ab7b7c490507d56a365359e7c3_layers = {
+                base_layers : {
+                    "https://tile.openstreetmap.de/{z}/{x}/{y}.png" : tile_layer_15c759e85987ba256c869d9fb59f5b6e,
+                },
+                overlays :  {
+                    "Pendidikan" : feature_group_611f4ad6e3d74c2bd585829eef1bd692,
+                    "Kesehatan" : feature_group_fbe2b55d578aa41d6eed54afdd4d1dce,
+                    "Ruang Terbuka" : feature_group_93299e83c29ab4d706c47f38aad7e305,
+                    "Infrastruktur Jalan" : feature_group_a0343125a514a18e696db581691b7ec2,
+                },
+            };
+            let layer_control_985ad0ab7b7c490507d56a365359e7c3 = L.control.layers(
+                layer_control_985ad0ab7b7c490507d56a365359e7c3_layers.base_layers,
+                layer_control_985ad0ab7b7c490507d56a365359e7c3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_4b5eb08472f68bba70e7f9c9ab0c5b8e);
+
+        
+</script>
+</html>

@@ -1,0 +1,9 @@
+nama,kategori,latitude,longitude,kondisi,aset_terdekat,jarak_terdekat_km
+Fasilitas Pendidikan A,Pendidikan,-3.7865,102.2784,Baik,Infrastruktur Jalan B,1.333
+Fasilitas Kesehatan A,Kesehatan,-3.813,102.3005,Baik,Fasilitas Pendidikan B,2.247
+Fasilitas Pendidikan B,Pendidikan,-3.8,102.285,Perlu pemeriksaan,Infrastruktur Jalan B,1.132
+Taman Kota A,Ruang Terbuka,-3.805,102.27,Baik,Infrastruktur Jalan B,0.956
+Fasilitas Kesehatan B,Kesehatan,-3.795,102.265,Perlu pemeriksaan,Infrastruktur Jalan B,1.159
+Infrastruktur Jalan A,Infrastruktur Jalan,-3.81,102.28,Perlu perbaikan,Taman Kota A,1.241
+Taman Kota B,Ruang Terbuka,-3.79,102.29,Baik,Fasilitas Pendidikan B,1.243
+Infrastruktur Jalan B,Infrastruktur Jalan,-3.798,102.275,Baik,Taman Kota A,0.956
